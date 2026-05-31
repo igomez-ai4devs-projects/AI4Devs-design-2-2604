@@ -392,3 +392,21 @@ Elegida **opción a)**.
     Se han generado 7 tickets correspondientes a la user story "Configure the requisition approval chain" y, añadido en la carpeta LTI-IGR/tickets.
 
 </br>
+
+## Prompt 7:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+    Estima el esfuerzo de los tickets de trabajo usando la metodología (fibonacci, poker, tallas de camiseta) y unidades (horas, puntos de historia) que prefieras.
+
+    Guarda las estimaciones en formato markdown dentro de la carpeta LTI-IGR/tickets/configure-approval-chain" con el nombre "estimate-effort.md".
+
+    Utiliza el idioma: inglés
+
+### Response:
+
+    Se han generado el fichero estimate-effort.md.
+
+</br>
