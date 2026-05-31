@@ -221,3 +221,17 @@ Deberá generar un backlog priorizado que cumpla con los siguientes puntos:
     Se ha generado el comando "backlog.md".
 
 </br>
+
+## Prompt 2:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+    @LTI-IGR/.claude/commands/backlog.md User stories en la carpeta "LTI-IGR/user-stories"
+
+    Si tienes algunas dudas pregunta.
+
+### Final Response:
+
+    Se ha generado el fichero backlog.md y, añadido en la carpeta LTI-IGR.
