@@ -121,3 +121,53 @@ Punto importantes que debe cumplir una buena user story:
     Se ha generado el comando "user-stories.md".
 
 </br>
+
+## Prompt 2:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+    @LTI-IGR/.claude/commands/user-stories.md El fichero README_PRD.md actúa como PRD con todos los links a la información necesaria que define las funcionalidades clave para crear un sistema ATS (Applicant-Tracking System). Define las user stories principales. Idioma para las user stories: inglés. La terminología debe ser acorde al sector ATS.
+
+    Si tienes algunas dudas pregunta.
+
+### Questions 1 - IA:
+
+    How side should the "principal" user stories reach across the PRD?
+
+        a) Three core funnel domains (Recommended)
+        Cover the value loop that has detailed specs: Requisitions & Job Posting, Cnadidate Applciation & Screening, Interviews & Hire Decision. Aprox. 18-22 stories spanning P0 + the key P1 (AI matching, multi-board distribution, self-scheduling). This is what the PRD calls the 'core value loop'.
+
+        b) Core funnel + Offeres & Analytics
+        The three core domains plus the catalogued Offers (UC-OFF) and Analytics/Compliance (UC-AN) use cases. Aprox. 28-32 stories. Broader, but Offers/Analytics have no detailed spec yet (stories inferred from the catalog).
+
+        c) Full MVP catalog
+        Every P0/P1 use case in the master catalog including Auth & Access (UC-AUTH). Aprox. 40+ stories. Most exhaustive; many stories derived from on-line catalog entries with inferred actors/scenarios.
+
+### Response to IA:
+
+Elegida **opción a)**.
+
+### Questions 2 - IA:
+
+    Which priority levels should the stories cover?
+
+        a) P0 + key P1 (Recommended)
+        All must-have MVP stories plus the standout P1 differentiators (AI candidate-job matching, multi-board distribution, candidate self-scheduling). Best 'principal' coverage.
+
+        b) PO only
+        Strictly must-have-for-MVP stories. Tightest backlog; defers AI matching and board distribution to later.
+
+        c) P0 + P1+ P2
+        Everithing including post-MVP items (programmatic advertising, async video, calibration analytics). Largest backlog.
+
+### Response to IA:
+
+Elegida **opción b)**.
+
+### Final Response:
+
+    Se ha generado 22 user stories y, añadido en la carpeta LTI-IGR/user-stories.
+
+</br>
