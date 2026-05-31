@@ -214,15 +214,13 @@ Deberá generar un backlog priorizado que cumpla con los siguientes puntos:
 
     4. Cuando el comando sea llamado, el backlog que genere lo deberá guardar en LTI-IGR/backlog.md
 
-</br>
-
 ### Response:
 
     Se ha generado el comando "backlog.md".
 
 </br>
 
-## Prompt 2:
+## Prompt 4:
 
 Agent: Claude Code - Sonnet 4.6
 
@@ -232,6 +230,121 @@ Agent: Claude Code - Sonnet 4.6
 
     Si tienes algunas dudas pregunta.
 
-### Final Response:
+### Response:
 
     Se ha generado el fichero backlog.md y, añadido en la carpeta LTI-IGR.
+
+</br>
+
+## Prompt 5:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+Basándote en el fichero **casos-de-uso.md** que se encuentra dentro de "LTI-IGR/.claude/commands", quiero que generes un fichero similar pero para utilizarlo como generardor de tickets a partir de una user story. El comando que generes guardalo en la carpeta de LTI/IGR/.claude/commands.
+
+Los tickets deberán cumplir los siguientes puntos:
+
+    1. Genera el fichero en inglés.
+
+    2. Un ticket de trabajo es una descripción detallada de una tarea que debe ser realizada. En Agile, estos suelen estar formateados como user stories, que incluyen detalles sobre el usuario, la necesidad y el resultado deseado.
+
+    3. Los componentes mínimos de un ticket de trabajo son un título breve y descriptivo, detalles en profundidad sobre lo que necesita hacerse, la urgencia de la tarea en una escala de clasificación conocida, y una estimación del tiempo o esfuerzo requerido para completarla.
+
+    4. Tipos de Tickets de trabajo
+        Características (Features): Descripciones de funcionalidades que el producto debe tener. Vinculados directamente a historias de usuario
+
+        Tareas Técnicas: Mejoras de infraestructura, refactoring de código, etc.
+
+        Bugs/Errores: Problemas detectados o conocidos que necesitan resolverse.
+
+        Mejoras: Sugerencias y mejoras basadas en el feedback del usuario.
+
+        Investigación (spike): es un elemento del Product Backlog orientado a la investigación o experimentación, cuya finalidad es obtener el aprendizaje necesario para implementar la funcionalidad solicitada por el Product Owner o cliente. En estos casos, se suele dividir la user story en 2, una relativa a la investigación, y otra posterior relativa a la característica a implementar.
+
+    5. Componentes de un Ticket de trabajo
+
+        5.1. Título Claro y Conciso: Un resumen breve que refleje la esencia de la tarea. Debe ser lo suficientemente descriptivo para que cualquier miembro del equipo entienda rápidamente de qué se trata el tickect.
+
+        5.2. Descripción Detallada:
+
+            Propósito: Explicación de por qué es necesaria la tarea y qué problema resuelve.
+
+            Detalles Específicos: Información adicional sobre requerimientos específicos, restricciones, o condiciones necesarias para la realización de la tarea.
+
+        5.3. Criterios de Aceptación:
+
+            Expectativas Claras: Lista detallada de condiciones que deben cumplirse para que el trabajo en el ticket se considere completado.
+
+            Pruebas de Validación: Pasos o pruebas específicas que se deben realizar para verificar que la tarea se ha completado correctamente
+
+        5.4. Prioridad:
+
+            Nivel de Urgencia: Una clasificación de la importancia y la urgencia de la tarea, lo cual ayuda a determinar el orden en que deben ser abordadas las tareas dentro del backlog.
+
+        5.5. Estimación de Esfuerzo:
+
+            Puntos de Historia o Tiempo Estimado: Una evaluación del tiempo o esfuerzo que se espera que tome completar el ticket. Esto es esencial para la planificación y gestión del tiempo del equipo.
+
+        5.6. Asignación:
+
+            Responsable: Quién o qué equipo será responsable de completar la tarea. Esto asegura que todos los involucrados entiendan quién está a cargo de cada parte del proyecto.
+
+        5.7. Etiquetas o Tags:
+
+            Categorización: Etiquetas que ayudan a clasificar el ticket por tipo (bug, mejora, tarea, etc.), por características del producto (UI, backend, etc.), o por sprint/versión.
+
+        5.8. Comentarios y Notas:
+
+            Colaboración: Espacio para que los miembros del equipo agreguen información relevante, hagan preguntas, o proporcionen actualizaciones sobre el progreso de la tarea.
+
+        5.9. Enlaces o Referencias:
+
+            Documentación Relacionada: Enlaces a documentos, diseños, especificaciones o tickets relacionados que proporcionen contexto adicional o información necesaria para la ejecución de la tarea.
+
+        5.10. Historial de Cambios:
+
+            Rastreo de Modificaciones: Un registro de todos los cambios realizados en el ticket, incluyendo actualizaciones de estado, reasignaciones y modificaciones en los detalles o prioridades.
+
+    6. Ejemplo de un Ticket de trabajo bien formulado:
+
+        Un ticket de trabajo bien estructurado es crucial para la gestión eficiente de proyectos Agile. Debe proporcionar toda la información necesaria de manera clara y accesible para facilitar la ejecución de las tareas y la colaboración entre los miembros del equipo. Aquí te mostramos un ejemplo que puedes usar como referencia, e incluso usar como plantilla en tu asistente IA para estructurar la información de una manera estándar para tus proyectos:
+
+        Título: Implementación de Autenticación de Dos Factores (2FA)
+
+        Descripción: Añadir autenticación de dos factores para mejorar la seguridad del login de usuarios. Debe soportar aplicaciones de autenticación como Authenticator y mensajes SMS.
+
+        Criterios de Aceptación:
+
+            Los usuarios pueden seleccionar 2FA desde su perfil.
+
+            Soporte para Google Authenticator y SMS.
+
+            Los usuarios deben confirmar el dispositivo 2FA durante la configuración.
+
+        Prioridad: Alta
+
+        Estimación: 8 puntos de historia
+
+        Asignado a: Equipo de Backend
+
+        Etiquetas: Seguridad, Backend, Sprint 10
+
+        Comentarios: Verificar la compatibilidad con la base de usuarios internacionales para el envío de SMS.
+
+        Enlaces: Documento de Especificación de Requerimientos de Seguridad
+
+        Historial de Cambios:
+
+            15/01/2025: Creado por [nombre]
+
+            20/01/2025: Prioridad actualizada a Alta por [nombre]
+
+    7. Cuando el comando sea llamado, los tickets se guardarán en LTI-IGR/tickets/[carpeta con el nombre de la user-story]/[nombre-del-ticket].md
+
+### Response:
+
+    Se ha generado el comando "tickets.md".
+
+</br>
