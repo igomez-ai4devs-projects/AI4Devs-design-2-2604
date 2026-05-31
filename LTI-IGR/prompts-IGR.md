@@ -171,3 +171,53 @@ Elegida **opción b)**.
     Se ha generado 22 user stories y, añadido en la carpeta LTI-IGR/user-stories.
 
 </br>
+
+## Prompt 3:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+Basándote en el fichero **casos-de-uso.md** que se encuentra dentro de "LTI-IGR/.claude/commands", quiero que generes un fichero similar pero para utilizarlo como generardor de un backlog.
+
+Te muestro un ejemplo de como quiero utilizar el nuevo **backlog.md** que generes:
+
+    /backlog Analiza las user stories existentes del sistema ATS (Applicant-Tracking Syste) y, que se encuentran en la carpeta [ruta y nombre de la caperta] y, genera un backlog.
+
+Deberá generar un backlog priorizado que cumpla con los siguientes puntos:
+
+    1. Genera el fichero en inglés.
+
+    2. Factores para la Priorización del Backlog
+
+        Valor del Negocio: Identificar las user stories y mejoras que aportan el mayor valor al negocio o a los usuarios finales. Esto incluye impacto en la retención de usuarios, atractivo para nuevos usuarios y potencial de ingresos.
+
+        Urgencia: Determinar qué características son más urgentes en términos de necesidades del mercado o compromisos con los stakeholders.
+
+        Dependencias: Reconocer y priorizar tareas que otras tareas dependen para su implementación. Esto asegura un flujo de trabajo lógico y eficiente.
+
+        Coste de implementación: Considerar el esfuerzo, los recursos y el tiempo necesarios para cada tarea. Priorizar aquellas con la mejor relación costo-beneficio.
+
+        Riesgos y obstáculos potenciales: Evaluar los riesgos asociados con cada user story o mejora y su impacto potencial en el proyecto.
+
+        Feedback del usuario: Integrar las opiniones y preferencias de los usuarios, especialmente en áreas críticas de la interfaz de usuario y la experiencia del usuario.
+
+        Madurez tecnológica: Considerar la madurez y la viabilidad de las soluciones tecnológicas propuestas para cada tarea.
+
+    3. Proceso de priorización
+
+        Revisión de Stakeholders: Involucrar a los stakeholders clave en el proceso de priorización para asegurar que el backlog refleje los objetivos del negocio.
+
+        Sesiones de Priorización con el Equipo: Utilizar técnicas como Planning Poker o la matriz de Eisenhower para consensuar la importancia de cada tarea.
+
+        Iteración y Reevaluación: El backlog debe ser dinámico, reevaluando y ajustando las prioridades regularmente a medida que avanza el proyecto y surgen nuevos datos.
+
+    4. Cuando el comando sea llamado, el backlog que genere lo deberá guardar en LTI-IGR/backlog.md
+
+</br>
+
+### Response:
+
+    Se ha generado el comando "backlog.md".
+
+</br>
