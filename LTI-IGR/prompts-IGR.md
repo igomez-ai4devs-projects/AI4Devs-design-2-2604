@@ -392,3 +392,41 @@ Elegida **opción a)**.
     Se han generado 7 tickets correspondientes a la user story "Configure the requisition approval chain" y, añadido en la carpeta LTI-IGR/tickets.
 
 </br>
+
+## Prompt 7:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+    Estima el esfuerzo de los tickets de trabajo usando la metodología (fibonacci, poker, tallas de camiseta) y unidades (horas, puntos de historia) que prefieras.
+
+    Guarda las estimaciones en formato markdown dentro de la carpeta LTI-IGR/tickets/configure-approval-chain" con el nombre "estimate-effort.md".
+
+    Utiliza el idioma: inglés
+
+### Response:
+
+    Se han generado el fichero estimate-effort.md.
+
+</br>
+
+## Prompt 8:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+    En el fichero LTI-IGR/LTI-IGR.md debes enlazar los siguientes documentos:
+
+    - User stories: que se encuentran en la carpeta LTI-IGR/user-stories. Enlaza el readme y un enlace a cada user story, haciendo una breve descripción de cada uno. Haz una breve descripción del objetivo de las user stories.
+
+    - Backlog: que se encuentran en la carpeta LTI-IGR y se llama backlog.md. Haz una breve descripción del objetivo del backlog.
+
+    - Ticket: que se encuentran en la carpeta LTI-IGR/tickets/configure-approval-chain. Enlaza el readme y un enlace a cada ticket, haciendo una breve descripción de cada uno. Haz una breve descripción del objetivo de los tickets. Incluye el documentode esfuerzo, que se encuentran en la carpeta LTI-IGR/tickets/configure-approval-chain y se llama estimate-effort.md.
+
+### Response:
+
+    Se han generado el fichero LTI-IGR.md.
+
+</br>
