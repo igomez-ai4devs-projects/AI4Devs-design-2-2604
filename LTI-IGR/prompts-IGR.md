@@ -348,3 +348,47 @@ Los tickets deberán cumplir los siguientes puntos:
     Se ha generado el comando "tickets.md".
 
 </br>
+
+## Prompt 6:
+
+Agent: Claude Code - Sonnet 4.6
+
+### Request:
+
+    @LTI-IGR/.claude/commands/tickets.md Crear tickets para la user story "Configure the requisition approval chain". Ruta donde se ha definido: "LTI-IGR/user-stories/configure-approval-chain.md"
+
+    Si tienes dudas que hay que resolver previamente, preguntamelas.
+
+### Questions 1 - IA:
+
+    Scenario 3 stores an SLA per step that 'drivers auto-escalation'. Should this story's tickets include the runtime escalation engine (timer/worker that fires when an approver doesn't act), or only persist the SLA config here and leave escalation enforcement to the approval-flow story (UC-REQ-02) / approve-or-reject-requisition)?
+
+        a) Config only here (Recommended)
+        Store SLA per step in this story; the runtime escalation worker is a separate ticket owned by UC-REQ-02. Keeps this story small and focused on configuration. I'll add a dependency note + a thin enabler ticket.
+
+        b) Include full escalation engine
+        Add ticket for the scheduler/worker, business-day calendar, and escalation notificaiton here. Larger story, more tickets, some overlap with the approval-flow story.
+
+### Response to IA:
+
+Elegida **opción a)**.
+
+### Questions 2 - IA:
+
+    Scenario 2 needs conditional steps (e.g., senior-level roles add an executive approver). How flexible should the conditional-rule capability be in these tickets?
+
+        a) Predefined conditions (Recommended)
+        Support a fixed set of attributes (level, salary band, cost center) with simple match rules. Estimable now, covers the acceptance criteria. No spike need.
+
+        b) Flexible rule builder
+        Generic condition/expression builder over arbitrary requisition fields. More powerful but unbounded - I'd add a Spike to scope it before the feature tickets.
+
+### Response to IA:
+
+Elegida **opción a)**.
+
+### Final Response:
+
+    Se han generado 7 tickets correspondientes a la user story "Configure the requisition approval chain" y, añadido en la carpeta LTI-IGR/tickets.
+
+</br>
